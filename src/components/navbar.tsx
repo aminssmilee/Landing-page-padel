@@ -73,9 +73,8 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       <div
-        className={`absolute top-full left-0 w-full overflow-hidden bg-[#070e24]/95 backdrop-blur-xl transition-all duration-300 lg:hidden ${
-          open ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
-        }`}
+        className={`absolute top-full left-0 w-full overflow-hidden bg-[#070e24]/95 backdrop-blur-xl transition-all duration-300 lg:hidden ${open ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
+          }`}
       >
         <nav className='flex flex-col px-6 py-6'>
           {menus.map((item) => (
