@@ -7,29 +7,26 @@ import Footer from './components/footer';
 import HeroSection from './components/hero-section';
 import Navbar from './components/navbar';
 import PricingSection from './components/pricing-section';
-import RootProvider from './components/providers/root';
 import TeamSection from './components/team-section';
 import TestimonialsSection from './components/testimonials-section';
 
 function App() {
   return (
-    <RootProvider>
-      <BrowserRouter>
-        <div className='flex min-h-dvh flex-col'>
-          <Navbar />
-          <main className='flex-1 flex flex-col'>
-            <HeroSection />
-            <AboutSection />
-            <FeaturesSection />
-            <TestimonialsSection />
-            <CommunitySection />
-            <PricingSection />
-            <TeamSection />
-          </main>
-          <Footer />
-        </div>
-      </BrowserRouter>
-    </RootProvider>
+    <BrowserRouter>
+      <div className='flex min-h-dvh flex-col bg-white'>
+        <Navbar />
+        <main className='flex flex-1 flex-col'>
+          <HeroSection />
+          <AboutSection />
+          <FeaturesSection />
+          <CommunitySection />
+          <TestimonialsSection />
+          <PricingSection />
+          <TeamSection />
+        </main>
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any, @typescript-eslint/no-unsafe-argument */
 import reactJsxA11y from 'eslint-plugin-jsx-a11y';
 import prettier from 'eslint-plugin-prettier/recommended';
 import react from 'eslint-plugin-react';
@@ -17,7 +18,7 @@ export default defineConfig(
   unicorn.configs.recommended as any,
   react.configs.flat['recommended'] as any,
   reactCompiler.configs.recommended as any,
-  reactHooks.configs.flat['recommended-latest'] as any,
+  reactHooks.configs.flat['recommended-latest'],
   reactJsxA11y.flatConfigs.recommended as any,
   reactX.configs['recommended-type-checked'] as any,
   reactX.configs['disable-conflict-eslint-plugin-react'] as any,
